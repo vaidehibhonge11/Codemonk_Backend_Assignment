@@ -1,12 +1,10 @@
-# paragraphs/views.py
 from rest_framework import generics, permissions
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
 from rest_framework.views import APIView
-from .models import CustomUser, Paragraph
+from .models import CustomUser, Paragraph, WordIndex
 from .serializers import CustomUserSerializer, ParagraphSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
-
 
 class CreateUserView(generics.CreateAPIView):
     queryset = CustomUser.objects.all()
@@ -42,7 +40,7 @@ class ParagraphSearchView(APIView):
 
     def get(self, request, *args, **kwargs):
         word = request.query_params.get('word').lower()
-        paragraphs = Paragraph.objects.all()
-        results = [paragraph for paragraph in paragraphs if word in paragraph.text.lower()]
-        serializer = ParagraphSerializer(results, many=True)
+        paragraph_ids = WordIndex.objects.filter(word=word).values_list('paragraph_id', flat=True)
+        paragraphs = Paragraph.objects.filter(id__in=paragraph_ids)
+        serializer = ParagraphSerializer(paragraphs, many=True)
         return Response(serializer.data)

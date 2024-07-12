@@ -1,4 +1,5 @@
 # paragraphs/urls.py
+
 from django.urls import path
 from .views import CreateUserView, LoginView, ParagraphListCreateView, ParagraphSearchView
 
