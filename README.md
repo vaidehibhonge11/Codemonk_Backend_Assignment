@@ -9,7 +9,7 @@ Before you begin, make sure you have the following installed on your system:
 Open your terminal (Command Prompt, PowerShell, or Terminal).
 Clone the repository using Git:
 
-git clone <repository-url>
+git clone https://github.com/vaidehibhonge11/Codemonk_Backend_Assignment
 cd <repository-directory>
 
 
