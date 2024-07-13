@@ -12,14 +12,14 @@ Clone the repository using Git:
 
 git clone https://github.com/vaidehibhonge11/Codemonk_Backend_Assignment
 
-cd <repository-directory>
+cd (repository-directory)
 
 
 
 #Step 2: Build and Start Docker Containers
 Navigate into the cloned repository directory:
 
-cd <repository-directory>
+cd (repository-directory)
 
 Build and start the Docker containers using Docker Compose:
 
@@ -34,7 +34,7 @@ Open a new terminal window (or use another tab in your current terminal).
 Navigate to the repository directory:
 
 
-cd <repository-directory>
+cd (repository-directory)
 
 Apply database migrations to create necessary tables:
 
