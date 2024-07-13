@@ -26,6 +26,7 @@ This command builds the Docker images specified in Dockerfile and starts the con
 Open a new terminal window (or use another tab in your current terminal).
 Navigate to the repository directory:
 
+
 cd <repository-directory>
 Apply database migrations to create necessary tables:
 
