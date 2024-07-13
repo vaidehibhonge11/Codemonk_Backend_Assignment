@@ -130,5 +130,5 @@ To verify the entries in the PostgreSQL database:
     Command: SELECT * FROM paragraphs_customuser;
     
 
-## Alternative Way to Check the API Endpoints
+## [Alternative Way to Check the API Endpoints](https://api555-7716.postman.co/workspace/API-Workspace~33a43dfb-364c-42da-8a31-5678f53b330d/collection/36959321-0ff4f7ec-ea1d-4035-ab3b-5a6c44c28642?action=share&creator=36959321)
 You can also use Postman to interact with the API endpoints. Refer to the Postman API documentation for detailed instructions on how to set up and use Postman for testing API endpoints.
